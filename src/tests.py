@@ -1,4 +1,3 @@
-import pytest
 from main import validar_email, validar_formulario, validar_password
 
 
