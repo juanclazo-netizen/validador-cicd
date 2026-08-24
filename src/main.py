@@ -11,9 +11,7 @@ def validar_password(password: str) -> bool:
         return False
     if not any(c.isupper() for c in password):
         return False
-    if not any(c.isdigit() for c in password):
-        return False
-    return True
+    return any(c.isdigit() for c in password)
 
 
 def validar_formulario(datos: dict) -> dict:
